@@ -31,7 +31,7 @@ public class SecurityConfig {
                 .authorizeRequests()
                 .antMatchers("/"
                         , "/css/**"
-                        , "/login/**"
+                        , "/login**"
                         , "*/images/**"
                         , "/js/**"
                         , "/h2-console/**"

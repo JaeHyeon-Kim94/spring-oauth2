@@ -14,7 +14,8 @@ public enum CustomOAuth2Provider {
                     , ClientAuthenticationMethod.CLIENT_SECRET_POST
                     , DEFAULT_LOGIN_REDIRECT_URL);
 
-            builder.scope("profile")
+            builder
+                    //.scope("profile_nickname")
                     .authorizationUri("https://kauth.kakao.com/oauth/authorize")
                     .tokenUri("https://kauth.kakao.com/oauth/token")
                     .userInfoUri("https://kapi.kakao.com/v2/user/me")
@@ -36,7 +37,7 @@ public enum CustomOAuth2Provider {
             builder.scope("profile")
                     .authorizationUri("https://nid.naver.com/oauth2.0/authorize")
                     .tokenUri("https://nid.naver.com/oauth2.0/token")
-                    .userInfoUri("\thttps://openapi.naver.com/v1/nid/me")
+                    .userInfoUri("https://openapi.naver.com/v1/nid/me")
                     .clientName("Naver");
 
             return builder;
