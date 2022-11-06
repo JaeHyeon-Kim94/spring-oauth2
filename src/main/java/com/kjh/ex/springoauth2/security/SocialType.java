@@ -8,7 +8,7 @@ public enum SocialType {
     private final String ROLE_PREFIX = "ROLE_";
     private String name;
 
-    SocialType(String naver) {
+    SocialType(String name) {
         this.name = name;
     }
 

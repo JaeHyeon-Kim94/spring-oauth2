@@ -5,7 +5,7 @@ import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 
 public enum CustomOAuth2Provider {
-
+    //열거형 말고 그냥 properties에서 관리하는 것 고려해볼 것.
     KAKAO{
         @Override
         public ClientRegistration.Builder getBuilder(String registrationId) {
